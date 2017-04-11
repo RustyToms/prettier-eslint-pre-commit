@@ -35,3 +35,10 @@ echo "$STRING"
 # make sure the modified files are still in the commit, to get the changes from prettier
 git add $jsfiles
 ```
+
+## To make this work
+* In the base folder of your repo, add the above code to `.git/hooks/pre-commit`
+* Run `chmod +x .git/hooks/pre-commit` to make the pre-commit executable
+* make sure you have eslint and prettier-eslint-cli installed
+  * `npm install -g eslint`
+  * `npm install -g prettier-eslint-cli`
